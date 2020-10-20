@@ -1,0 +1,24 @@
+<form #todoSubmit="ngForm" (ngSubmit)="onSubmit(todoSubmit.value)">
+  <div class="form-group">
+    <label for="responsible">Responsible</label>
+    <input type="text" class="form-control" name="responsible" [(ngModel)]="responsible" />
+  </div>
+  <div class="form-group">
+    <label for="priority">Priority</label>
+    <select class="form-control" name="priority" [(ngModel)]="priority">
+      <option>low</option>
+      <option>medium</option>
+      <option>high</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea class="form-control" name="description" rows="3" [(ngModel)]="description"></textarea>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Save</button>
+  </div>
+</form>
+<div *ngIf="saved">
+  <p>Your todo is saved!</p>
+</div>
