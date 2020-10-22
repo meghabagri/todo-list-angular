@@ -1,4 +1,5 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
 
 html,
 body {
@@ -29,4 +30,8 @@ body {
 
 .btn.btn-block {
   padding: 12px 10px;
+}
+
+.highlighted {
+  color: deeppink;
 }

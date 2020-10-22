@@ -27,11 +27,11 @@ export class TodoService {
   }
 
   delete(key: string): Promise<void> {
+    console.log(key);
     return this.todosRef.remove(key);
   }
 
   deleteAll(): Promise<void> {
-    console.log('here');
     return this.todosRef.remove();
   }
 }

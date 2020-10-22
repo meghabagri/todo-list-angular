@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/todo-list-megha",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
